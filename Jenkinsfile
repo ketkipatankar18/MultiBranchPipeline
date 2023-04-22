@@ -1,3 +1,4 @@
+
 pipeline{
   agent any
   stages{
@@ -8,7 +9,7 @@ pipeline{
     }
     stage('Branch1'){
       when {
-          branch "Branch1"
+          branch 'Branch1'
         }
       steps{
         echo 'This is the Branch1 Pipeline'
@@ -16,7 +17,7 @@ pipeline{
     }
     stage('Branch2'){
       when {
-          branch "Branch2"
+          branch 'Branch2'
         }
       steps{
         echo 'This is the Branch2 Pipeline'
@@ -24,7 +25,7 @@ pipeline{
     }
     stage('Branches'){
       when {
-          branch "Branch*"
+          branch 'Branch*'
         }
       steps{
         echo 'This stage shows up in all Branches'
