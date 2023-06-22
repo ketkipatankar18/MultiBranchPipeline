@@ -13,7 +13,7 @@ pipeline{
                         echo 'Hello from master branch'
                     }  
                     else {
-                        echo "Hello from %BRANCH_NAME% branch!"
+                        echo "Hello from $BRANCH_NAME branch!"
                     }
                     }
             }
